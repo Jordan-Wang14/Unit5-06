@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset=utf-8">
+  <meta name="description" content="daily work ">
+  <meta name="keywords" content="Unit5-03">
+  <meta name=author" content="Jordan Wang">
+  <meta name="viewport' content='width=device-width, initial-scale=1.0">
+        <title> </title>
+    </head>
+    <body>
+    <p>guess my age</p>
+<p><input id="number" type="text" placeholder="Enter the number"/></p>
+<p><button onclick="setGreeting()">check</button></p>
+<script>
+function setGreeting()
+{
+   var greeting = document.getElementById("number").value;
+   var myage =15
+   if (greeting==myage) 
+   {
+    greeting = "you guessed right";
+   } 
+   else 
+   {
+    greeting = "try again";
+   }
+   document.getElementById("number").value =greeting;
+}
+</script>
+    </body>
+</html>
